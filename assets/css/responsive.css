@@ -1,0 +1,442 @@
+
+
+/* ------------------------------
+		sh users style
+		-------------------------------*/
+		@media all and (max-width: 1199px){
+
+		}
+
+
+/* ------------------------------
+		sh style
+		-------------------------------*/
+		@media all and (max-width: 991px){
+			/* user-style */
+			.data-table_filter {
+				margin-top: 15px;
+			}
+			.sh-datatable > table > thead > tr > .sh-date-add {
+				padding: 8px 6px;
+				position: relative;
+			}
+			.sh-datatable > table > thead > tr > th > img {
+				position: absolute;
+				bottom: 11px;
+				right: 0px;
+			}
+			.sh-datatable > table > thead > tr > .sh-cus_name > img {
+				left: 6rem;
+				bottom: 13px;
+			}
+			.sh-datatable > table > thead > tr > .sh_cus_ayssays > img {
+				left: 9rem;
+				bottom: 13px;
+			}
+
+			/* sites style */
+			.sh-datatable > table > thead > tr > .sh-cus_name{
+				position: relative;
+			}
+			.sh-th-customdgn{
+				padding-right: 90px !important;
+			}
+			.sh-th-customdgn_2{
+				padding-right: 120px !important;
+			}
+			.sh-sites-datatable .sh-th-customdgn_2 {
+				width: 224px;
+			}
+			.sk-single-dash {
+				margin-bottom: 10px;
+			}
+			.sk-welcome-area.sk-site-drop-2 .container {
+				padding: 0 15px;
+			}
+			.sk-footer {
+				padding: 40px 0 25px 0;
+			}
+			.sh-home-sidbar {
+				padding: 18px 17px;
+			}
+
+
+		}
+
+		@media all and (max-width: 840px){
+			.sh-datatable table {
+				width: 770px !important;
+			}
+		}
+
+		@media all and (max-width: 767px){
+			.sk-header-area {
+				position: fixed;
+				width: 100%;
+				z-index: 999;
+			}	
+			.sh-user-datatable,
+			.sh-sites-datatable,
+			.sh-add_new_user {
+				padding-top: 55px;
+			}
+			.sk-single-dash { 
+				margin-bottom: 1rem;
+			}
+			.sk-admin-prfl { 
+				display: none;
+			}
+			.sk-admin-prfl2 { 
+				cursor: pointer;
+				position: relative;
+				padding: 20px;
+			}
+			.sk-logo {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+				width: 100%;
+				padding: 0 1rem;
+			}
+			.sk-admin-form {
+				width: 200px;
+				top: 90%;
+			}
+			.sk-menu-area { 
+				display: none;
+			}
+			.sk-menu-area2 { 
+				box-shadow: 0px 7px 22px -11px #ddd;
+				padding: 1rem 20px;
+				background: #fff;
+			}
+			.sk-menu ul li a {
+				padding-left: 0;
+			}
+			.sk-mobile-menu {
+				position: fixed;
+				top: 65px;
+				left: 0;
+				width: 100%;
+				height: 200px;
+				background: #fff;
+				z-index: 999;
+				border-top: 2px solid #ddd8d8;
+			}
+			.sk-admin-prfl2 ul li span, .sk-admin-prfl ul li span { 
+				margin-left: 0;  
+				margin-right: 1rem;
+			}
+			.sk-admin-prfl2 ul li p, .sk-admin-prfl ul li p { 
+				-webkit-box-pack: left; 
+				-ms-flex-pack: left; 
+				justify-content: left;
+			}
+			.sk-menu ul { 
+				-webkit-box-orient: vertical; 
+				-webkit-box-direction: normal; 
+				-ms-flex-direction: column; 
+				flex-direction: column;
+			}
+			.sk-admin-prfl2 ul, .sk-admin-prfl ul { 
+				-webkit-box-pack: left; 
+				-ms-flex-pack: left; 
+				justify-content: left;
+			}
+			.sk-admin-form { 
+				left: 13%; 
+			}
+			.sk-welcome-success {
+				width: 342px; 
+			}
+			.dash-icon {
+				display: block;
+			}
+			.new-design-select {
+				margin-top: 10px;
+			}
+			.sh-home-sidbar {
+				padding: 18px 24px;
+			}
+
+			/* sites style */
+			.sh-sites-datatable .data-table_filter {
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+			}
+			.sh-datatable > table > thead > tr > .sh-cus_name> img{
+				right: -2px;
+			}
+			#Assays .data-table_filter {
+				-webkit-box-pack: end;
+				-ms-flex-pack: end;
+				justify-content: flex-end;
+			}
+			#Assays .search-filter {
+				margin-right: 0;
+			}
+			.search-filter {
+				max-width: 222px;
+			}
+			#dataTable{
+				width: 691px;
+			}
+			/* date picker */
+			.custom-date-picker .calendar-table th, 
+			.custom-date-picker .calendar-table td {
+				min-width: 34px;
+				width: 100%;
+				height: auto;
+				line-height: 30px;
+			}
+			.sk-welcome-area.sk-site-drop-2 {
+				padding-top: 8px;
+			}
+			.sk-date-single {
+				justify-content: flex-start;
+			}
+			.sk-welcome-area {
+				padding-top: 80px;
+			}
+			.sk-date-single {
+				padding-top: 0;
+			}
+
+			.sh-testing {
+				padding-right: 0;
+			}
+			.sh-sars-cov{
+				padding-left: 0;
+				margin-top: 12px;
+			}
+
+		}
+
+
+/* ------------------------------
+		sh users style
+		-------------------------------*/
+		@media all and (max-width: 575px){
+			.data-table_filter {
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+			}
+			.sh-user-datatable .search-filter {
+				max-width: 100%;
+				margin-bottom: 15px;
+			}
+			.data-table_filter {
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+			}
+			.user-activity {
+				margin-left: 0;
+			}
+			.sh-site-drp {
+				margin-left: 0;
+			}
+			.dataTables_length label, .sh-pagination label {
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				margin-bottom: 20px;
+			}
+			.sh-pagination {
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+			}
+			.sh-tab button {
+				max-width: 125px;
+			}
+			#Instruments .sh-ins-qution {
+				margin-bottom: 20px;
+			}
+			#Assays .search-filter {
+				margin-right: 0;
+				max-width: 100%;
+			}
+			.new-user-activity {
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				width: 100%;
+			}
+			.add-user .user-add-btn {
+				margin-left: 10px;
+			}	
+			.sh-button-style.sh-user-delet_style {
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: column;
+				flex-direction: column;
+			}
+			.sh-button-style .delete_user_btn {
+				margin-bottom: 15px;
+			}
+			.custom-date-picker{
+				overflow-x: scroll;
+				padding-bottom: 20px;
+			}
+			.calendar.left {
+				margin-right: 20px;
+			}
+			.new-user-activity .user-activity{
+				display: block;
+				width: 100%;
+			}
+			.sk-site-drp.sh-site-drp {
+				width: 100%;
+			}
+			.sk-site-drp.sh-site-drp ul .rs-dgn-w {
+				width: 75px;
+			}
+			.new-user-activity .add-user{
+				display: none;
+			}
+
+			.sh-report-filter button{
+				margin-left: 0px;
+			}
+		}
+
+
+
+
+		@media all and (max-width: 479px){
+			.search-filter{
+				max-width: 100%;
+				margin-right: 0px !important;
+			}
+			.add-user.sh-d-none {
+				margin-left: 0;
+				display: none;
+			}
+			.add-user.sh-res-d-none {
+				display: block !important;
+				float: right;
+			}
+			.new-design-select.two {
+				width: 100%;
+			}
+			.new-design-select.two select {
+				width: 250px;
+				max-width: 420px;
+				width: 100%;
+			}
+			.new-design-select.two {
+				margin-right: 0;
+			}
+		}
+
+		
+		@media all and (max-width: 450px) {
+			.add-user .user-add-btn {
+				margin-left: 0;
+				margin-top: 10px;
+			}
+			.add-user {
+				margin-left: 0;
+			}
+			.new-user-activity {
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: column;
+				flex-direction: column;
+			}
+			.tablinks.sh-res-tablinks {
+				max-width: 120px;
+			}
+			.sh-tab button {
+				max-width: 91px;
+			}
+			.sh-button-style .cancel-btn, 
+			.sh-button-style .add-user-btn{
+				margin-bottom: 15px;
+			}
+			.form-btn2 .sk-save-btn {
+				margin-bottom: 15px;
+			}
+			.mdl-cnf-btn-grup button{
+				margin-bottom: 15px;
+			}
+			.sh-form-trush {
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: column;
+				flex-direction: column;
+			}
+			.mdl-trash-btn {
+				margin-bottom: 22px;
+			}
+			.select_mate.new-class {
+				min-width: 120px;
+				width: 120px;
+			}
+			.cont_select_int.new-class {
+				width: 120px;
+			}
+			.dk-progress-title {
+				margin-bottom: 15px;
+			}
+			.sk-progress-single {
+				margin-top: 0;
+			}
+			.selecionado_opcion {
+				font-size: 13px;
+				padding: 8px 8px;
+			}
+			.selecionado_opcion.mobile-class {
+				width: 145px;
+			}
+			.select_mate.mobile-class {
+				min-width: 145px;
+				width: 145px;
+			}
+			.icon_select_mate img {
+				width: 10px;
+			}
+			.icon_select_mate {
+				top: 7px;
+				right: 10px;
+			}
+
+			.icon_select_mate.mobile-class {
+				right: 3px;
+			}
+
+
+		}
+
+		@media all and (max-width: 400px) {
+			.left-date-time, .right-date-time{
+				width: 130px;
+				padding: 10.5px 5px;
+			}
+			.left-date-time i, .right-date-time i {
+				margin-left: 5px;
+			}
+			.sh-report-filter button, 
+			.sh-reort-display button, 
+			.sh-reort-export button {
+				padding: 10.5px 6px;
+				width: 92px;			
+			}
+		}
+		@media all and (max-width: 358px){
+			.sh-reort-export button{
+				margin-left: 0px;
+				margin-top: 15px;
+				margin-right: 10px;
+			}
+		}

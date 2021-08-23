@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <title>DASH - Reports</title>
+    <link rel="icon" href="assets/images/favicon.png">
+
+    <!-- Poppins google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Files-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap5.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+  </head>
+  <body>
+    
+    <!--**************START HEADER AREA**************-->
+    <header class="sk-header-area">
+        <div class="container">
+            <div class="sk-header">
+                <!-- logo -->
+                <div class="sk-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </a>
+                    <a class="dash-icon" href="index.html">
+                        <img src="assets/images/bars.png" alt="logo">
+                    </a>
+                </div>
+                <div class="sk-admin-prfl">
+                    <ul>
+                        <li><p>Admin</p><a href="#">email@m2dx.com</a></li>
+                        <li><span>A</span></li>
+                    </ul>
+                    <div class="sk-admin-form">
+                        <ul>
+                            <li><a class="sk-my-btn" href="#" data-toggle="modal" data-target="#my-account-mdl">My account</a></li>
+                            <li><a style="color: #FF7475;" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <!--**************END HEADER AREA**************-->
+
+    <!--**************START MENU AREA**************-->
+    <section class="sk-menu-area">
+        <div class="container">
+            <div class="sk-menu">  
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="sk-active" href="reports.html">Reports</a></li>
+                    <li><a href="users.html">Users</a></li>
+                    <li><a href="configuration.html">Configuration</a>
+                    </li>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </section>
+    <!--**************END MENU AREA**************-->
+
+
+    <!--**************START USER AREA**************-->
+    <section class="sh-user-datatable">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card shadow mt-5 mb-5 p-4 ">
+                        <div class="card-body">
+
+                            <!-- search -->
+                            <div class="row align-items-end">
+                                <div class="col-sm-12 col-md-12 col-lg-5">
+                                    <div class="total-user sh-reports">
+                                        <h4>Reports</h4>
+                                    </div>
+                                    <div class="reports-date-time">
+                                        <div class="left-date-time" tabindex="1">
+                                            <ul>
+                                                <li>06-26-2021 <i class="fas fa-calendar-alt"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="middle-dash">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="right-date-time" tabindex="1">
+                                            <ul>
+                                                <li>06-26-2021 <i class="fas fa-calendar-alt"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-7">
+                                    <div class="data-table_filter">
+                                        <div class="search-filter">
+                                            <form action="">
+                                            <button type="submit">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                            <input type="search" class="form-control form-control-lg" placeholder="Search...">
+                                            </form>
+                                        </div>
+                                        <div class="sh-report-filter">
+                                            <button type="button"  data-toggle="modal" data-target="#sh-reports"><i class="fas fa-filter"></i> Filter</button>
+                                        </div>
+                                        <div class="sh-reort-display">
+                                            <button data-toggle="dropdown"  type="button"><i class="fas fa-columns"></i> Display</button>
+
+                                            <ul class="dropdown-menu sh-dis-dropdown" role="menu" aria-labelledby="dLabel">   
+                                                <li>Select columns to display</li>   
+                                                <div class="scroll-div-dis">   
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="d_input_1" checked>
+                                                    <label class="form-check-label" for="d_input_1">Select All</label>
+                                                </div>  
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="d_input_2" checked>
+                                                    <label class="form-check-label" for="d_input_2">Test ID</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="d_input_3" checked>
+                                                    <label class="form-check-label" for="d_input_3">Specimen ID</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="d_input_4" checked>
+                                                    <label class="form-check-label" for="d_input_4">Username</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="d_input_5" checked>
+                                                    <label class="form-check-label" for="d_input_5">Instrument</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="d_input_6" checked>
+                                                    <label class="form-check-label" for="d_input_6">Site</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="d_input_7" checked>
+                                                    <label class="form-check-label" for="d_input_7">Assay</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="d_input_8" checked>
+                                                    <label class="form-check-label" for="d_input_8">Cartridge Lot#</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="d_input_9" checked>
+                                                    <label class="form-check-label" for="d_input_9">Result</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="d_input_11" checked>
+                                                    <label class="form-check-label" for="d_input_11">Test Run Time</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="d_input_12" checked>
+                                                    <label class="form-check-label" for="d_input_12">Specimen Type</label>
+                                                </div>
+                                                </div> 
+                                                <div class="dis-button">
+                                                    <button class="dis-cancel">Cancel</button>
+                                                    <button class="dis-view">View</button>
+                                                </div>
+                                            </ul>
+
+                                        </div>
+                                        <div class="sh-reort-export">
+                                            <button type="button">Export <i class="fas fa-chevron-down"></i></button>
+                                            <ul class="sh-dropdown">
+                                                <li><a href="#" class="sh-dropdown-item">CSV</a></li>
+                                                <li><a href="#" class="sh-dropdown-item">XLSX</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- data-table -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive sh-datatable sh-reports">
+                                    <table class="table table" id="dataTable" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th class="sh-date-add">Test ID&nbsp; <img src="assets/images/date-time.png" alt="img-icon"></th>
+                                                <th>Specimen ID&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                <th>Username&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                <th>Instrument<i class="fas fa-sort-down" style="visibility: hidden;"></th>
+                                                <th>Site&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                <th>Assay&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                <th>Cartridge Lot#&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                <th>Result&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                <th>Test Run Time&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+
+                                                <th>Specimen Type&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="#">A006C200T005</a></td>
+                                                <td>ZBC1230001</td>
+                                                <td>John123</td>
+                                                <td>DeviceName</td>
+                                                <td>ABC Lab</td>
+                                                <td>A006</td>
+                                                <td>T005</td>
+                                                <td class="pos">Positive</td>
+                                                <td>2021-06-05T18:43:59Z</td>
+                                                <td>Swab - 30 mm breakpoint</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">A006C200T005</a></td>
+                                                <td>ZBC1230001</td>
+                                                <td>John123</td>
+                                                <td>DeviceName</td>
+                                                <td>ABC Lab</td>
+                                                <td>A006</td>
+                                                <td>T005</td>
+                                                <td class="neg">Negative</td>
+                                                <td>2021-06-05T18:43:59Z</td>
+                                                <td>Swab - 30 mm breakpoint</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">A006C200T005</a></td>
+                                                <td>ZBC1230001</td>
+                                                <td>John123</td>
+                                                <td>DeviceName</td>
+                                                <td>ABC Lab</td>
+                                                <td>A006</td>
+                                                <td>T005</td>
+                                                <td class="inv">Invalid</td>
+                                                <td>2021-06-05T18:43:59Z</td>
+                                                <td>Swab - 30 mm breakpoint</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">A006C200T005</a></td>
+                                                <td>ZBC1230001</td>
+                                                <td>John123</td>
+                                                <td>DeviceName</td>
+                                                <td>ABC Lab</td>
+                                                <td>A006</td>
+                                                <td>T005</td>
+                                                <td class="neg">Negative</td>
+                                                <td>2021-06-05T18:43:59Z</td>
+                                                <td>Swab - 30 mm breakpoint</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">A006C200T005</a></td>
+                                                <td>ZBC1230001</td>
+                                                <td>John123</td>
+                                                <td>DeviceName</td>
+                                                <td>ABC Lab</td>
+                                                <td>A006</td>
+                                                <td>T005</td>
+                                                <td class="err">Error</td>
+                                                <td>2021-06-05T18:43:59Z</td>
+                                                <td>Swab - 30 mm breakpoint</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">A006C200T005</a></td>
+                                                <td>ZBC1230001</td>
+                                                <td>John123</td>
+                                                <td>DeviceName</td>
+                                                <td>ABC Lab</td>
+                                                <td>A006</td>
+                                                <td>T005</td>
+                                                <td class="neg">Negative</td>
+                                                <td>2021-06-05T18:43:59Z</td>
+                                                <td>Swab - 30 mm breakpoint</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">A006C200T005</a></td>
+                                                <td>ZBC1230001</td>
+                                                <td>John123</td>
+                                                <td>DeviceName</td>
+                                                <td>ABC Lab</td>
+                                                <td>A006</td>
+                                                <td>T005</td>
+                                                <td class="neg">Negative</td>
+                                                <td>2021-06-05T18:43:59Z</td>
+                                                <td>Swab - 30 mm breakpoint</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">A006C200T005</a></td>
+                                                <td>ZBC1230001</td>
+                                                <td>John123</td>
+                                                <td>DeviceName</td>
+                                                <td>ABC Lab</td>
+                                                <td>A006</td>
+                                                <td>T005</td>
+                                                <td class="pos">Positive</td>
+                                                <td>2021-06-05T18:43:59Z</td>
+                                                <td>Swab - 30 mm breakpoint</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">A006C200T005</a></td>
+                                                <td>ZBC1230001</td>
+                                                <td>John123</td>
+                                                <td>DeviceName</td>
+                                                <td>ABC Lab</td>
+                                                <td>A006</td>
+                                                <td>T005</td>
+                                                <td class="neg">Negative</td>
+                                                <td>2021-06-05T18:43:59Z</td>
+                                                <td>Swab - 30 mm breakpoint</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">A006C200T005</a></td>
+                                                <td>ZBC1230001</td>
+                                                <td>John123</td>
+                                                <td>DeviceName</td>
+                                                <td>ABC Lab</td>
+                                                <td>A006</td>
+                                                <td>T005</td>
+                                                <td class="neg">Negative</td>
+                                                <td>2021-06-05T18:43:59Z</td>
+                                                <td>Swab - 30 mm breakpoint</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- data filter -->
+                            <div class="row data-tb-length">
+                                <div class="col-12 col-sm-8 col-md-6">
+                                    <div class="dataTables_length">
+                                    <label><p>Displaying </p> 
+                                        <select name="" >
+                                            <option value="10">10</option>
+                                            <option value="25">25</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
+                                        </select> 
+                                        <p>of 18 entries</p>
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-6">
+                                    <div class="sh-pagination">
+                                    <label><p>Page </p> 
+                                        <select name="" >
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select> 
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--**************END USER AREA**************-->
+
+
+    <!--*************START FOOTER AREA**************-->
+    <footer class="sk-footer-area">
+        <div class="container">
+            <div class="sk-footer">
+                <p>Copyrights 2021 Minute Molecular</p>
+            </div>
+        </div>
+    </footer>
+    <!--**************END FOOTER AREA**************-->
+
+
+    <!--**************START MOBILE MENU AREA**************-->
+    <div class="sk-mobile-menu"> 
+        <div class="sk-admin-prfl2">
+            <ul>
+                <li><span>A</span></li>
+                <li><p>Admin</p><a href="#">email@m2dx.com</a></li> 
+            </ul>
+            <div class="sk-admin-form">
+                <ul>
+                    <li><a class="sk-my-btn" href="#">My Account</a></li>
+                    <li><a style="color: #FF7475;" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sk-menu-area2">
+            <div class="container">
+                <div class="sk-menu">  
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a class="sk-active" href="#">Users</a></li>
+                        <li><a href="#">Configuration</a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--**************END MOBILE MENU AREA**************-->
+
+    <!-- Modal - My account -->
+    <div class="modal fade" id="my-account-mdl" tabindex="-1" role="dialog" aria-labelledby="formModal"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="formModal">MY Account</h5>
+          </div>
+          <div class="modal-body">
+            <form class="">
+              <div class="form-group">
+                <label for="ins-name">Name<span>*</span></label>
+                <input type="text" id="ins-name" class="form-control" placeholder="Name" name="ins-name" value="John Smith">
+              </div>
+              <div class="form-group redonly-emil">
+                <!-- allert-msg -->
+                <div class="email-alerat-msg">
+                    <p>Email address cannot be changed</p>
+                </div>
+
+                <label for="email-click" class="form-label">Email Address</label>
+                <input type="email" id="email-click" class="form-control" placeholder="Site Name" name="email" value="john@m2dx.com" readonly>
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">Password</label>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <button type="button" class="mdl-change-pass-btn" >Change password</button>
+                    </div>
+                </div>
+              </div>
+              <div class="form-group sh-form-trush">
+                <div class="mdl-trash-btn">
+                </div>
+                <div class="mdl-btn-group">
+                  <button type="button" class="mdl-cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
+                  <button type="submit" class="mdl-save-btn">Save</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reports filter Modal -->
+    <div class="modal fade" id="sh-reports" tabindex="-1" role="dialog" aria-labelledby="formModal"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="formModal">Filter</h5>
+          </div>
+          <div class="modal-body">
+            <form class="">
+                <div class="sh-reports-select">
+
+                    <div class="accordion" id="reports">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">User</button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#reports">
+                              <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="user-check-1" checked>
+                                        <label class="form-check-label" for="user-check-1">User A</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="user-check-2" >
+                                        <label class="form-check-label" for="user-check-2">User B</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="user-check-3" checked>
+                                        <label class="form-check-label" for="user-check-3">User ABC</label>
+                                    </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Instrument
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#reports">
+                              <div class="accordion-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="ins-check-1" checked>
+                                    <label class="form-check-label" for="ins-check-1">Instrument Name</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="ins-check-2" >
+                                    <label class="form-check-label" for="ins-check-2">ABCD1234567890</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="ins-check-3" checked>
+                                    <label class="form-check-label" for="ins-check-3">Instrument Name</label>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Site
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#reports">
+                              <div class="accordion-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="site-check-1" checked>
+                                    <label class="form-check-label" for="site-check-1">Site A</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="site-check-2" checked>
+                                    <label class="form-check-label" for="site-check-2">Site B</label>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Result
+                              </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#reports">
+                              <div class="accordion-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="res-check-1" checked>
+                                    <label class="form-check-label" for="res-check-1">Result A</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="res-check-3" checked>
+                                    <label class="form-check-label" for="res-check-3">Result B</label>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+              <div class="form-group sh-form-trush sh-reports">
+                <div class="mdl-trash-btn">
+                    <button type="submit"><i class="fas fa-times"></i>Clear All Filters</button>
+                </div>
+                <div class="mdl-btn-group">
+                  <button type="button" class="mdl-cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
+                  <button type="submit" class="mdl-save-btn">Apply</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end modal -->
+
+
+
+ 
+
+    <!-- JS Files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap5.min.js"></script>
+    <script src="assets/js/pie-chart.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+  </body>
+</html>

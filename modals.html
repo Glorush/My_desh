@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <title>DASH | Modals </title>
+    <link rel="icon" href="assets/images/favicon.png">
+
+    <!-- Poppins google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Files-->
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
+    <!-- CSS Files-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap5.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+  </head>
+  <body>
+    
+    <!--**************START HEADER AREA**************-->
+    <header class="sk-header-area">
+        <div class="container">
+            <div class="sk-header">
+                <!-- logo -->
+                <div class="sk-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </a>
+                    <a class="dash-icon" href="index.html">
+                        <img src="assets/images/bars.png" alt="logo">
+                    </a>
+                </div>
+                <div class="sk-admin-prfl">
+                    <ul>
+                        <li><p>Admin</p><a href="#">email@m2dx.com</a></li>
+                        <li><span>A</span></li>
+                    </ul>
+                    <div class="sk-admin-form">
+                        <ul>
+                            <li><a class="sk-my-btn" href="#">My account</a></li>
+                            <li><a style="color: #FF7475;" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <!--**************END HEADER AREA**************-->
+
+    <!--**************START MENU AREA**************-->
+    <section class="sk-menu-area">
+        <div class="container">
+            <div class="sk-menu">  
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Configuration</a></li>
+                </ul> 
+            </div>
+        </div>
+    </section>
+    <!--**************END MENU AREA**************-->
+
+
+    <!--**************START MODAL AREA**************-->
+    <section class="my-account-modal">
+    	<div class="container">
+    		<div class="row">
+
+                <!-- Welcome modal -->
+                <div class="col-12 col-md-6 col-lg-6 mt-5">
+                    <div class="card sh-card-modal">
+                        <div class="card-header">
+                            <h4>Home  |  Welcome Message</h4>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rani">Welcome</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- User delete Confirmation modal -->
+                <div class="col-12 col-md-6 col-lg-6 mt-5">
+                    <div class="card sh-card-modal">
+                        <div class="card-header">
+                            <h4>Users  |  Delete User Confirmation</h4>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#delete-User-mdl">Delete User</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add / Edit site modal -->
+                <div class="col-12 col-md-6 col-lg-6 mt-5">
+                    <div class="card sh-card-modal">
+                        <div class="card-header">
+                            <h4>Configuration  |  Add / Edit site</h4>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit-site-mdl">Add / Edit Site</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Site delete Confirmation modal -->
+                <div class="col-12 col-md-6 col-lg-6 mt-5">
+                    <div class="card sh-card-modal">
+                        <div class="card-header">
+                            <h4>Configuration  |  Delete Site Confirmation</h4>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#delete-site-mdl">Delete site</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edit Instrument modal -->
+                <div class="col-12 col-md-6 col-lg-6 mt-5">
+                    <div class="card sh-card-modal">
+                        <div class="card-header">
+                            <h4>Configuration  |  Edit Instrument</h4>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit-instrument-mdl">Edit Instrument</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edit Assays modal -->
+                <div class="col-12 col-md-6 col-lg-6 mt-5">
+                    <div class="card sh-card-modal">
+                        <div class="card-header">
+                            <h4>Configuration  |  Edit Assay</h4>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit-assays-mdl">Edit Assay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filter modal -->
+                <div class="col-12 col-md-6 col-lg-6 mt-5">
+                  <div class="card sh-card-modal">
+                      <div class="card-header">
+                          <h4>Reports  |  Filter</h4>
+                      </div>
+                      <div class="card-body">
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sh-reports">Filter</button>
+                      </div>
+                  </div>
+              </div>
+
+                <!-- MY Account modal -->
+                <div class="col-12 col-md-6 col-lg-6 mt-5">
+                    <div class="card sh-card-modal">
+                        <div class="card-header">
+                            <h4>My Account</h4>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#my-account-mdl">My Account</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Change Password modal -->
+                <div class="col-12 col-md-6 col-lg-6 mt-5">
+                    <div class="card sh-card-modal">
+                        <div class="card-header">
+                            <h4>Change Password</h4>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#my-account-chang-pass-mdl">Change Password</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Change Password success modal -->
+                <div class="col-12 col-md-6 col-lg-6 mt-5">
+                    <div class="card sh-card-modal">
+                        <div class="card-header">
+                            <h4>Change Password Success</h4>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#my-account-chang-pass-success-mdl">Success</button>
+                        </div>
+                    </div>
+                </div>
+          
+            <!-- end modal card -->
+            </div>
+
+
+            <!-- Modal - User delete confirmation -->
+            <div class="modal fade" id="delete-User-mdl" tabindex="-1" role="dialog" aria-labelledby="formModal"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content mdl-site-cnf">
+                  <div class="modal-body">
+                    <div class="site-delet-confirmation-msg">
+                            
+                        <h4 class="confer-msg">Confirmation</h4>
+                        <p class="site-sure-mgs">Are you sure you want to delete following user and all associated records? You cannot undo this action.</p>
+                        <div class="delet-user-name">
+                            <p>- John Doe</p>
+                        </div>
+                        <form class="">
+                          <div class="form-group">
+                            <div class="mdl-btn-group mdl-cnf-btn-grup">
+                              <button type="button" class="mdl-cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
+                              <button type="submit" class="mdl-save-btn">Delete</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal - Edit site-->
+            <div class="modal fade" id="edit-site-mdl" tabindex="-1" role="dialog" aria-labelledby="formModal"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="formModal">Edit Site</h5>
+                  </div>
+                  <div class="modal-body">
+                    <form class="">
+                      <div class="form-group">
+                        <label for="sit-id">Site Name<span>*</span></label>
+                        <input type="text" id="sit-id" class="form-control" placeholder="Site Name" name="site-name" value="Site A">
+                      </div>
+                      <div class="form-group">
+                        <label>Address<span>*</span></label>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Street" name="street">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="City" name="city">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="State" name="state">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Zip Code" name="zip">
+                            </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="form-group-labels">
+                            <label for="" class="form-label">Instruments (5)</label>
+                            <p>Manage instruments</p>
+                        </div>
+                        <div class="sh-user-roll">
+                            <div class="user-activity ml-0">
+                                <div class="sk-site-drp sh-site-drp sh-assays-drp">
+                                    <ul>
+                                        <li><a href="#" class="sh-ml">Instrument Name, +1</a></li>
+                                        <li><i class="fas fa-chevron-down"></i></li>
+                                    </ul>
+                                    <div class="all-assays-drp-here">
+
+                                       <div class="form-group">
+                                            <div class="search-filter">
+                                                <button type="submit"><i class="fas fa-search"></i></button>
+                                                <input type="search" class="form-control " placeholder="Search...">
+                                            </div>
+                                       </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="all-input">
+                                                <label class="form-check-label" for="all-input">Select All (6)
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="input0">
+                                                <label class="form-check-label" for="input0">Instrument Name
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="input1" checked>
+                                                <label class="form-check-label" for="input1">ABCD1234567890
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="input2">
+                                                <label class="form-check-label" for="input2">ABCD1234567890
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="input3" checked>
+                                                <label class="form-check-label" for="input3">Instrument Name
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="input4" >
+                                                <label class="form-check-label" for="input4">ABCD1234567890
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="input5" >
+                                                <label class="form-check-label" for="input5">Instrument Name
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="form-group sh-form-trush">
+                        <div class="mdl-trash-btn">
+                            <button type="submit"><i class="fas fa-trash"></i>Delete Site</button>
+                        </div>
+                        <div class="mdl-btn-group">
+                          <button type="button" class="mdl-cancel-btn" data-dismiss="modal" aria-label="submit">Cancel</button>
+                          <button type="submit" class="mdl-save-btn">Save</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal - Site delete confirmation -->
+            <div class="modal fade" id="delete-site-mdl" tabindex="-1" role="dialog" aria-labelledby="formModal"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content mdl-site-cnf">
+                  <div class="modal-body">
+                    <div class="site-delet-confirmation-msg">
+                            
+                        <h4 class="confer-msg">Confirmation</h4>
+                        <p class="site-sure-mgs">Are you sure you want to delete following site? You cannot undo this action.</p>
+                        <div class="delet-site-name">
+                            <p>- Site A</p>
+                        </div>
+                        <div class="remove-instrument">
+                            <p class="site-sure-mgs">This will also remove all associated instruments </p>
+                            <div class="remove-instrument-name">
+                                <p>- Instrument Name</p>
+                                <p>- Instrument Name</p>
+                            </div>
+                        </div>
+                        <form class="">
+                          <div class="form-group">
+                            <div class="mdl-btn-group mdl-cnf-btn-grup">
+                              <button type="button" class="mdl-cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
+                              <button type="submit" class="mdl-save-btn">Delete</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal - Edit Instrument -->
+            <div class="modal fade" id="edit-instrument-mdl" tabindex="-1" role="dialog" aria-labelledby="formModal"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="formModal">Edit Instrument</h5>
+                  </div>
+                  <div class="modal-body">
+                    <form class="">
+                      <div class="form-group">
+                        <label for="ins-name">Instrument Name</label>
+                        <input type="text" id="ins-name" class="form-control" placeholder="Instrument Name" name="ins-name" value="Instrument Name">
+                      </div>
+                      <div class="form-group redonly-emil">
+                        <label for="ins-serial">Serial</label>
+                        <input type="text" id="ins-serial" class="form-control" placeholder="Site Name" name="ins-serial" value="ABCD1234567890" readonly>
+                      </div>
+                      <div class="form-group sh_addnew-user">
+                        <div class="form-group-labels">
+                            <label for="site-man" class="form-label">Site</label>
+                            <p>Manage Sites</p>
+                        </div>
+                        <div class="sh-user-roll">
+                            <select name="" id="site-man" class="form-select form-select-lg " onchange="window.location = jQuery('#site-man option:selected').val();">
+                                <option value="" selected="">Site A</option>
+                                <option value="">Site B</option>
+                                <option value="">Site C</option>
+                            </select>
+                        </div>
+                      </div>
+                      <div class="form-group sh-form-trush">
+                        <div class="mdl-trash-btn">
+                        </div>
+                        <div class="mdl-btn-group">
+                          <button type="button" class="mdl-cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
+                          <button type="submit" class="mdl-save-btn">Save</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal - Edit Assays -->
+            <div class="modal fade" id="edit-assays-mdl" tabindex="-1" role="dialog" aria-labelledby="formModal"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="formModal">SARS-CoV-2-K  |  Assays</h5>
+                  </div>
+                  <div class="modal-body">
+                    <form class="">
+                      <div class="form-group sh_addnew-user">
+                        <div class="form-group-labels">
+                        </div>
+                        <div class="sh-user-roll">
+                            <label for="assays-man" class="form-label">Select Instruments</label>
+                            <div class="user-activity ml-0">
+                                <div class="sk-site-drp sh-site-drp sh-assays-drp">
+                                    <ul>
+                                        <li><a href="#" class="sh-ml">Instrument Name, +1</a></li>
+                                        <li><i class="fas fa-chevron-down"></i></li>
+                                    </ul>
+                                    <div class="all-assays-drp-here">
+
+                                       <div class="form-group">
+                                            <div class="search-filter">
+                                                <button type="submit"><i class="fas fa-search"></i></button>
+                                                <input type="search" class="form-control " placeholder="Search...">
+                                            </div>
+                                       </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="all-input">
+                                                <label class="form-check-label" for="all-input">Select All (6)
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="input0">
+                                                <label class="form-check-label" for="input0">Instrument Name
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="input1" checked>
+                                                <label class="form-check-label" for="input1">ABCD1234567890
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="input2">
+                                                <label class="form-check-label" for="input2">ABCD1234567890
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="input3" checked>
+                                                <label class="form-check-label" for="input3">Instrument Name
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="input4" >
+                                                <label class="form-check-label" for="input4">ABCD1234567890
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="input5" >
+                                                <label class="form-check-label" for="input5">Instrument Name
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="form-group sh-form-trush">
+                        <div class="mdl-trash-btn">
+                        </div>
+                        <div class="mdl-btn-group">
+                          <button type="button" class="mdl-cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
+                          <button type="submit" class="mdl-save-btn">Save</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal - My account -->
+            <div class="modal fade" id="my-account-mdl" tabindex="-1" role="dialog" aria-labelledby="formModal"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="formModal">MY Account</h5>
+                  </div>
+                  <div class="modal-body">
+                    <form class="">
+                      <div class="form-group">
+                        <label for="ins-name">Name<span>*</span></label>
+                        <input type="text" id="ins-name" class="form-control" placeholder="Name" name="ins-name" value="John Smith">
+                      </div>
+                      <div class="form-group redonly-emil">
+                        <!-- allert-msg -->
+                        <div class="email-alerat-msg">
+                            <p>Email address cannot be changed</p>
+                        </div>
+
+                        <label for="email-click" class="form-label">Email Address</label>
+                        <input type="email" id="email-click" class="form-control" placeholder="Site Name" name="email" value="john@m2dx.com" readonly>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="form-label">Password</label>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <button type="button" class="mdl-change-pass-btn" >Change password</button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="form-group sh-form-trush">
+                        <div class="mdl-trash-btn">
+                        </div>
+                        <div class="mdl-btn-group">
+                          <button type="button" class="mdl-cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
+                          <button type="submit" class="mdl-save-btn">Save</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal - Change password -->
+            <div class="modal fade" id="my-account-chang-pass-mdl" tabindex="-1" role="dialog" aria-labelledby="formModal"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="formModal">Change Password</h5>
+                  </div>
+                  <div class="modal-body">
+                    <form class="">
+                      <div class="form-group">
+                        <input type="password" class="form-control" name="pass" id="" placeholder="Existing password">
+                        <input type="password" class="form-control" name="new-pass" id="" placeholder="New password">
+                        <input type="password" class="form-control" name="confirm-pass" id="" placeholder="Confirm new password">
+                        <p class="my-ac-pre">You will need to log back in after changing password</p>
+                      </div>
+                      <div class="form-group sh-form-trush">
+                        <div class="mdl-trash-btn">
+                        </div>
+                        <div class="mdl-btn-group">
+                          <button type="button" class="mdl-cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
+                          <button type="submit" class="mdl-save-btn">Save</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal - Change password success-->
+            <div class="modal fade" id="my-account-chang-pass-success-mdl" tabindex="-1" role="dialog" aria-labelledby="formModal"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content mdl-site-cnf my-acc-success">
+                  <div class="modal-body">
+                    <div class="my-account-success-msg">
+                        <div class="acc-success-msg">
+                            <img src="assets/images/check.png" alt="check-image">
+                        </div>
+                        <p class="site-sure-mgs my-acc-msg">Password changed successfully. Please login</p>
+                        <form class="">
+                          <div class="form-group">
+                            <div class="mdl-btn-group mdl-cnf-btn-grup my-acc-suc-btn">
+                              <button type="submit" class="acc-btn-login">Login</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Welcome Message-->
+            <div class="modal fade" id="rani" tabindex="1" role="dialog" aria-labelledby="formModal"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content mdl-site-cnf my-acc-success">
+                  <div class="modal-body">
+                    <div class="sk-welcome-popup">
+                        <h4>Welcome to DASH!</h4>
+                        <p>Get started by setting up your Instruments, Sites and Assays </p>
+                        <form class="form-btn2"> 
+                            <a class="sk-save-btn" href="#" id="sk-config">Go to Configration</a> 
+                            <a class="sk-cencel-btn" href="#" data-dismiss="modal" aria-label="Close" id="sk-config-lat">I will set up later</a>
+                        </form>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Reports filter Modal -->
+            <!-- Reports filter Modal -->
+            <div class="modal fade" id="sh-reports" tabindex="-1" role="dialog" aria-labelledby="formModal"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="formModal">Filter</h5>
+                  </div>
+                  <div class="modal-body">
+                    <form class="">
+                        <div class="sh-reports-select">
+
+                            <div class="accordion" id="reports">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">User</button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#reports">
+                                      <div class="accordion-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="user-check-1" checked>
+                                                <label class="form-check-label" for="user-check-1">User A</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="user-check-2" >
+                                                <label class="form-check-label" for="user-check-2">User B</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="user-check-3" checked>
+                                                <label class="form-check-label" for="user-check-3">User ABC</label>
+                                            </div>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Instrument
+                                      </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#reports">
+                                      <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="ins-check-1" checked>
+                                            <label class="form-check-label" for="ins-check-1">Instrument Name</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="ins-check-2" >
+                                            <label class="form-check-label" for="ins-check-2">ABCD1234567890</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="ins-check-3" checked>
+                                            <label class="form-check-label" for="ins-check-3">Instrument Name</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Site
+                                      </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#reports">
+                                      <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="site-check-1" checked>
+                                            <label class="form-check-label" for="site-check-1">Site A</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="site-check-2" checked>
+                                            <label class="form-check-label" for="site-check-2">Site B</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Result
+                                      </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#reports">
+                                      <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="res-check-1" checked>
+                                            <label class="form-check-label" for="res-check-1">Result A</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="res-check-3" checked>
+                                            <label class="form-check-label" for="res-check-3">Result B</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                      <div class="form-group sh-form-trush sh-reports">
+                        <div class="mdl-trash-btn">
+                            <button type="submit"><i class="fas fa-times"></i>Clear All Filters</button>
+                        </div>
+                        <div class="mdl-btn-group">
+                          <button type="button" class="mdl-cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
+                          <button type="submit" class="mdl-save-btn">Apply</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- end modal -->
+        </div>
+    </section>
+    <!--**************END MODAL AREA**************-->
+
+
+    <!--*************START FOOTER AREA**************-->
+    <footer class="sk-footer-area">
+        <div class="container">
+            <div class="sk-footer">
+                <p>Copyrights 2021 Minute Molecular</p>
+            </div>
+        </div>
+    </footer>
+    <!--**************END FOOTER AREA**************-->
+    
+
+    <!--**************START MOBILE MENU AREA**************-->
+    <div class="sk-mobile-menu"> 
+        <div class="sk-admin-prfl2">
+            <ul>
+                <li><span>A</span></li>
+                <li><p>Admin</p><a href="#">email@m2dx.com</a></li> 
+            </ul>
+            <div class="sk-admin-form">
+                <ul>
+                    <li><a class="sk-my-btn" href="#">My Account</a></li>
+                    <li><a style="color: #FF7475;" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sk-menu-area2">
+            <div class="container">
+                <div class="sk-menu">  
+                    <ul>
+                        <li><a class="sk-active" href="#">Home</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="#">Users</a></li>
+                        <li><a href="#">Configuration </a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--**************END MOBILE MENU AREA**************-->
+
+
+ 
+
+    <!-- JS Files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap5.min.js"></script>
+    <script src="assets/js/pie-chart.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script type="text/javascript">
+        $('#assays-man').multiselect();
+    </script>
+  </body>
+</html>

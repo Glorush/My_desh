@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <title>DASH | Configuration</title>
+    <link rel="icon" href="assets/images/favicon.png">
+
+    <!-- Poppins google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+    <!-- CSS Files-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap5.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+  </head>
+  <body>
+    
+    <!--**************START HEADER AREA**************-->
+    <header class="sk-header-area">
+        <div class="container">
+            <div class="sk-header">
+                <!-- logo -->
+                <div class="sk-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </a>
+                    <a class="dash-icon" href="index.html">
+                        <img src="assets/images/bars.png" alt="logo">
+                    </a>
+                </div>
+                <div class="sk-admin-prfl">
+                    <ul>
+                        <li><p>Admin</p><a href="#">email@m2dx.com</a></li>
+                        <li><span>A</span></li>
+                    </ul>
+                    <div class="sk-admin-form">
+                        <ul>
+                            <li><a class="sk-my-btn" href="#" data-toggle="modal" data-target="#my-account-mdl">My account</a></li>
+                            <li><a style="color: #FF7475;" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <!--**************END HEADER AREA**************-->
+
+    <!--**************START MENU AREA**************-->
+    <section class="sk-menu-area">
+        <div class="container">
+            <div class="sk-menu">  
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="users.html">Users</a></li>
+                    <li><a class="sk-active" href="configuration.html">Configuration</a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </section>
+    <!--**************END MENU AREA**************-->
+
+    <!--**************START USER AREA**************-->
+    <section class="sh-sites-datatable">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card shadow mt-5 mb-5">
+                        <div class="card-head">
+                            <div class="sh-tab">
+                              <button class="tablinks active" onclick="openCity(event, 'Sites')">Sites</button>
+                              <button class="tablinks sh-res-tablinks" onclick="openCity(event, 'Instruments')">Instruments</button>
+                              <button class="tablinks" onclick="openCity(event, 'Assays')">Assays</button>
+                            </div>
+                        </div>
+                        <div class="card-body p-5 " >
+
+                            <!-- tab-sites -->
+                            <div id="Sites" class="tabcontent" style="display:block;">
+                                <!-- search -->
+                                <div class="row align-items-center">
+                                    <div class="col-5 col-sm-12 col-md-4 col-lg-6">
+                                        <div class="total-user">
+                                            <h4>Sites</h4>
+                                            <p>4 sites total</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-7 d-sm-none">
+                                            <div class="add-user sh-res-d-none d-none ">
+                                                <a href="#" class="user-add-btn"><i class="fas fa-plus"></i>Add a Site</a>
+                                            </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-6">
+                                        <div class="data-table_filter">
+                                            <div class="search-filter">
+                                            <form action="">
+                                                <button type="submit"><i class="fas fa-search"></i></button>
+                                                <input type="search" class="form-control form-control-lg" placeholder="Search...">
+                                            </form>
+                                            </div>
+                                            <div class="add-user sh-d-none">
+                                                <a href="#" class="user-add-btn"><i class="fas fa-plus"></i>Add a Site</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- data-table -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="table-responsive sh-datatable sh-sites-datatable">
+                                        <table class="table table" id="dataTable" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th class="sh-cus_name ">Name <img src="assets/images/date-time.png" alt="img-icon"></th>
+                                                    <th class=" sh-th-customdgn_2 ">Address&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                    <th>Date Added&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                    <th  class="sh-th-customdgn">Instruments&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="#">Site A</a></td>
+                                                    <td>No.X ABC Street, Evanston, IL 60201</td>
+                                                    <td>04/22/2021</td>
+                                                    <td><ul class="sh-site-select" id="sh_site-acordion">
+                                                        <li><a href="#" class="sh_article-title">Instrument Name<span>, +3</span><i class="fas fa-chevron-down"></i></a>
+                                                            <ul class="sh-site-dropdown">ABCD1234567890</a></li>
+                                                            <li><a href="#">Instrument Name</a></li>
+                                                            <li><a href="#">Instrument Name</a></li>
+                                                        </li>
+                                                    </ul></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">Site B</a></td>
+                                                    <td>No.Y XYZ Street, Evanston, IL 60201</td>
+                                                    <td>04/22/2021</td>
+                                                    <td>--</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">Site C</a></td>
+                                                    <td>No.X ABC Street, Evanston, IL 60201</td>
+                                                    <td>04/22/2021</td>
+                                                    <td>ABCD1234567890</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">Site D</a></td>
+                                                    <td>No.Y XYZ Street, Evanston, IL 60201</td>
+                                                    <td>04/22/2021</td>
+                                                    <td><ul class="sh-site-select" id="sh_site-acordion">
+                                                        <li><a href="#" class="sh_article-title">Instrument Name<span>, +2</span><i class="fas fa-chevron-down"></i></a>
+                                                            <ul class="sh-site-dropdown">Instrument Name</a></li>
+                                                            <li><a href="#">Instrument Name</a></li>
+                                                        </li>
+                                                    </ul></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- data filter -->
+                                <div class="row data-tb-length">
+                                    <div class="col-12 col-sm-8 col-md-6">
+                                        <div class="dataTables_length">
+                                        <label><p>Displaying </p> 
+                                            <select name="" >
+                                                <option value="10">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select> 
+                                            <p>of 4 entries</p>
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-6">
+                                        <div class="sh-pagination">
+                                        <label><p>Page </p> 
+                                            <select name="" >
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select> 
+                                        </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- tab Instruments -->
+                            <div id="Instruments" class="tabcontent">
+
+                                <!-- search -->
+                                <div class="row align-items-center">
+                                    <div class="col-sm-12 col-md-4 col-lg-6">
+                                        <div class="total-user">
+                                            <h4>Instruments</h4>
+                                            <p>4 instruments total</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-6">
+                                        <div class="data-table_filter">
+                                            <a href="#" class="sh-ins-qution">Can’t find serial on instrument?</a>
+                                            <div class="search-filter">
+                                            <form action="">
+                                                <a href=""></a>
+                                                <button type="submit"><i class="fas fa-search"></i></button>
+                                                <input type="search" class="form-control form-control-lg" placeholder="Search...">
+                                            </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- data-table -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="table-responsive sh-datatable sh-sites-datatable">
+                                        <table class="table table" id="dataTable" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th class="sh-cus_name">Serial <img src="assets/images/date-time.png" alt="img-icon"></th>
+                                                    <th>Name&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                    <th>Date Added&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                    <th>Site&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="#">ABCD1234567890</a></td>
+                                                    <td>Instrument Name</td>
+                                                    <td>04/22/2021</td>
+                                                    <td>Site A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">ABCD1234567891</a></td>
+                                                    <td>--</td>
+                                                    <td>04/22/2021</td>
+                                                    <td>Site A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">ABCD1234567892</a></td>
+                                                    <td>--</td>
+                                                    <td>04/22/2021</td>
+                                                    <td>--</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">ABCD1234567893</a></td>
+                                                    <td>Instrument Name</td>
+                                                    <td>04/22/2021</td>
+                                                    <td>Site C</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- data filter -->
+                                <div class="row data-tb-length">
+                                    <div class="col-12 col-sm-8 col-md-6">
+                                        <div class="dataTables_length">
+                                        <label><p>Displaying </p> 
+                                            <select name="" >
+                                                <option value="10">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select> 
+                                            <p>of 4 entries</p>
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-6">
+                                        <div class="sh-pagination">
+                                        <label><p>Page </p> 
+                                            <select name="" >
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select> 
+                                        </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- tab Assays -->
+                            <div id="Assays" class="tabcontent">
+                                <!-- search -->
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-sm-4 col-md-4 col-lg-6">
+                                        <div class="total-user">
+                                            <h4>Assays</h4>
+                                            <p>1 assay total</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-8 col-lg-6">
+                                        <div class="data-table_filter">
+                                            <div class="search-filter">
+                                            <form action="">
+                                                <a href=""></a>
+                                                <button type="submit"><i class="fas fa-search"></i></button>
+                                                <input type="search" class="form-control form-control-lg" placeholder="Search...">
+                                            </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- data-table -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="table-responsive sh-datatable sh-sites-datatable">
+                                        <table class="table table" id="dataTable" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th class="sh-cus_name sh_cus_ayssays">Test Name <img src="assets/images/date-time.png" alt="img-icon"></th>
+                                                    <th>Date Added&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                    <th>Instruments&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                    <th>Test Ref ID&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                    <th>QC Kit&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                    <th>QC Kit Ref ID&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                    <th>Specimen Type&nbsp;<i class="fas fa-sort-down" style="visibility: hidden;"></i></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="#">SARS-CoV-2-K</a></td>
+                                                    <td>04/22/2021</td>
+                                                    <td>2</td>
+                                                    <td>D0303</td>
+                                                    <td>Nasal</td>
+                                                    <td>Q0303</td>
+                                                    <td>30mm breakpoint</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- data filter -->
+                                <div class="row data-tb-length">
+                                    <div class="col-12 col-sm-8 col-md-6">
+                                        <div class="dataTables_length">
+                                        <label><p>Displaying </p> 
+                                            <select name="" >
+                                                <option value="10">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select> 
+                                            <p>of 1 entries</p>
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-6">
+                                        <div class="sh-pagination">
+                                        <label><p>Page </p> 
+                                            <select name="" >
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select> 
+                                        </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--**************END USER AREA**************-->
+
+   <!--*************START FOOTER AREA**************-->
+    <footer class="sk-footer-area">
+        <div class="container">
+            <div class="sk-footer">
+                <p>Copyrights 2021 Minute Molecular</p>
+            </div>
+        </div>
+    </footer>
+    <!--**************END FOOTER AREA**************-->
+
+    <!--**************START MOBILE MENU AREA**************-->
+    <div class="sk-mobile-menu"> 
+        <div class="sk-admin-prfl2">
+            <ul>
+                <li><span>A</span></li>
+                <li><p>Admin</p><a href="#">email@m2dx.com</a></li> 
+            </ul>
+            <div class="sk-admin-form">
+                <ul>
+                    <li><a class="sk-my-btn" href="#">My Account</a></li>
+                    <li><a style="color: #FF7475;" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sk-menu-area2">
+            <div class="container">
+                <div class="sk-menu">  
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="#">Users</a></li>
+                        <li><a class="sk-active" href="#">Configuration</a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--**************END MOBILE MENU AREA**************-->
+
+    <!-- Modal - My account -->
+    <div class="modal fade" id="my-account-mdl" tabindex="-1" role="dialog" aria-labelledby="formModal"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="formModal">MY Account</h5>
+          </div>
+          <div class="modal-body">
+            <form class="">
+              <div class="form-group">
+                <label for="ins-name">Name<span>*</span></label>
+                <input type="text" id="ins-name" class="form-control" placeholder="Name" name="ins-name" value="John Smith">
+              </div>
+              <div class="form-group redonly-emil">
+                <!-- allert-msg -->
+                <div class="email-alerat-msg">
+                    <p>Email address cannot be changed</p>
+                </div>
+
+                <label for="email-click" class="form-label">Email Address</label>
+                <input type="email" id="email-click" class="form-control" placeholder="Site Name" name="email" value="john@m2dx.com" readonly>
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">Password</label>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <button type="button" class="mdl-change-pass-btn" >Change password</button>
+                    </div>
+                </div>
+              </div>
+              <div class="form-group sh-form-trush">
+                <div class="mdl-trash-btn">
+                </div>
+                <div class="mdl-btn-group">
+                  <button type="button" class="mdl-cancel-btn" data-dismiss="modal" aria-label="Close">Cancel</button>
+                  <button type="submit" class="mdl-save-btn">Save</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
+
+
+
+ 
+
+    <!-- JS Files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap5.min.js"></script>
+    <script src="assets/js/pie-chart.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <script>
+    function openCity(evt, siteName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(siteName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+  </body>
+</html>

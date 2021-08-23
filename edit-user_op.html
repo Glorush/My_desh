@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <title>Edit User | DASH</title>
+    <link rel="icon" href="assets/images/favicon.png">
+
+    <!-- Poppins google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+    <!-- CSS Files-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap5.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+  </head>
+  <body>
+    
+    <!--**************START HEADER AREA**************-->
+    <header class="sk-header-area">
+        <div class="container">
+            <div class="sk-header">
+                <!-- logo -->
+                <div class="sk-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </a>
+                    <a class="dash-icon" href="index.html">
+                        <img src="assets/images/bars.png" alt="logo">
+                    </a>
+                </div>
+                <div class="sk-admin-prfl">
+                    <ul>
+                        <li><p>Admin</p><a href="#">email@m2dx.com</a></li>
+                        <li><span>A</span></li>
+                    </ul>
+                    <div class="sk-admin-form">
+                        <ul>
+                            <li><a class="sk-my-btn" href="#">My Account</a></li>
+                            <li><a style="color: #FF7475;" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <!--**************END HEADER AREA**************-->
+
+    <!--**************START MENU AREA**************-->
+    <section class="sk-menu-area">
+        <div class="container">
+            <div class="sk-menu">  
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a class="sk-active" href="#">Users</a></li>
+                    <li><a href="#">Configurations</a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </section>
+    <!--**************END MENU AREA**************-->
+
+
+    <!--**************START USER AREA**************-->
+    <section class="sh-add_new_user">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-5">
+                    <div class="back-user-btn">
+                        <a href="#"><i class="fas fa-arrow-left"></i>Back to Users</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card shadow mt-4 mb-5 p-4 ">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-md-6 card-u-h4">
+                                    <h4>Edit User</h4>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 card-u-p">
+                                    <p class="sh-required-textr">(*) Required fields</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+
+                            <!-- search -->
+                            <div class="row sh_addnew-user">
+                                <div class="col-md-12">
+                                    <form action="" id="Add_user_form">
+                                    <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="sh-user-roll">
+                                            <label for="sh-u_roll" class="form-label">Role</label>
+                                            <select name="" id="sh-u_roll" class="form-select form-select-lg">
+                                                <option value="Operator" selected>Operator</option>
+                                                <option value="Subscriber">Admin</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="row gx-5">
+                                    <div class="col-md-6">
+                                        <div class="sh-u_personal-info">
+                                            <h3>Personal Info</h3>
+                                            <div class="mb-3 form-group">
+                                                <label class="form-label" for="name">Full Name <span>*</span></label>
+
+                                                <!-- required class(.sh-error) heare -->
+                                                <input type="text" name="name" id="naem" class="form-control" value='John Doe' placeholder="Full name" required>
+
+                                                <!-- required messages -->
+                                                <div class="error-messages" style="display:none;">
+                                                    <p>full name is required</p>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 form-group redonly-emil">
+                                                <label class="form-label" for="email-click">Email Address <span>*</span></label>
+
+                                                <div class="email-alerat-msg">
+                                                	<p>Email address cannot be changed</p>
+                                                </div>
+                                                <!-- required class(.sh-error) heare -->
+                                                <input type="email" name="email" id="email-click" class="form-control" value='john@mylab.com'  required readonly>
+
+                                                <!-- required messages -->
+                                                <div class="error-messages" style="display:none;">
+                                                    <p></p>
+                                                </div>
+                                            </div> 
+                                            <div class="mb-3 form-group sh_status">
+                                                <label for="slick" class="form-label">Status</label>
+                                                <select id="slick">
+                                                    <option value="0" data-imagesrc="assets/images/active-icon.png">Active</option>
+                                                    <option value="1" data-imagesrc="assets/images/inactive-icon.png">Inactive</option>
+                                                </select>
+                                            </div>
+                                            <div class="mbr-3 d-none d-md-block">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="usr-edit-op" checked>
+                                                    <label class="form-check-label" for="usr-edit-op">Send this user an email about their account
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="sh-u_instrument-info">
+                                            <h3>Instrument Info</h3>
+                                        </div>
+                                            <div class="row">
+                                            <div class=" form-group col-md-6 mb-2">
+                                                <label class="form-label" for="name">User Name <span>*</span></label>
+
+                                                <!-- required class(.sh-error) heare -->
+                                                <input type="text" name="u-name" id="naem" class="form-control " value='john1' placeholder="User name" required>
+
+                                                <!-- required messages -->
+                                                <div class="error-messages" style="display:none;">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                            <div class=" form-group col-md-6 mb-2">
+                                                <label class="form-label" for="pass">Instrument PIN</label>
+                                                
+                                                <!-- required class(.sh-error) heare -->
+                                                <input type="password" name="pass" id="pass" class="form-control" placeholder="4-digit numeric pin" value=''>
+
+                                            </div>
+                                            </div>
+                                            <div class="mb-3 form-group">
+                                                <label class="form-label" for="bar-id">Barcode ID </label>
+                                                <input type="text" name="bar-id" id="bar-id" class="form-control">
+                                            </div>
+                                            <div class="sh-reort-display">
+                                                <label class="form-label">Sites</label>
+                                                <button data-toggle="dropdown"  type="button" class="w-100 d-flex justify-content-between aling-items-center ml-0 sh-checkbtn">
+                                                    <span>Sites</span> 
+                                                     <i class="fas fa-chevron-down mt-1"></i>
+                                                 </button>
+
+                                                <ul class="dropdown-menu sh-dis-dropdown sh-user-drpdown" role="menu" aria-labelledby="dLabel"> 
+                 
+                                                    <div class="scroll-div-dis sh-scroll-div"> 
+                                                    <div class="form-group">
+                                                        <div class="search-filter d-flex search-filter-user w-100">
+                                                            <button type="submit" class="ml-0"><i class="fas fa-search"></i></button>
+                                                            <input type="search" class="form-control w-100 pl-3" placeholder="Search...">
+                                                        </div>
+                                                    </div>  
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="d_input_1" checked>
+                                                        <label class="form-check-label" for="d_input_1">Select All(6)</label>
+                                                    </div>  
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="d_input_2" checked>
+                                                        <label class="form-check-label" for="d_input_2">Instrument Name</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="d_input_3" checked>
+                                                        <label class="form-check-label" for="d_input_3">ABCD1234567890</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="d_input_4" checked>
+                                                        <label class="form-check-label" for="d_input_4">ABCD1234567890</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="d_input_5" checked>
+                                                        <label class="form-check-label" for="d_input_5">Instrument Name</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="d_input_6" checked>
+                                                        <label class="form-check-label" for="d_input_6">ABCD1234567890</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="d_input_5" checked>
+                                                        <label class="form-check-label" for="d_input_5">Instrument Name</label>
+                                                    </div>
+                                                    </div> 
+                                                </ul>
+
+                                            </div>
+
+                                            <div class="mbr-3 d-sm-block d-md-none">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked>
+                                                    <label class="form-check-label" for="flexCheckChecked2">Send this user an email about their account</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row align-item-center ">
+                                    <div class="col-md-12">
+                                        <div class="sh-button-style sh-user-delet_style">
+                                        	<div class="sh-user-delete sh-user-delete_op ">
+                                        		<input type="submit" class="delete_user_btn" value="Delete User">
+                                        	</div>
+                                        	<div class="user-main-btngroup">
+                                            <input type="submit" class="cancel-btn" value="Cancel">
+                                            <input type="submit" class="add-user-btn"  value="Update">
+                                        	</div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--**************END USER AREA**************-->
+
+
+    <!--*************START FOOTER AREA**************-->
+    <footer class="sk-footer-area">
+        <div class="container">
+            <div class="sk-footer">
+                <p>Copyrights 2021 Minute Molecular</p>
+            </div>
+        </div>
+    </footer>
+    <!--**************END FOOTER AREA**************-->
+
+
+    <!--**************START MOBILE MENU AREA**************-->
+    <div class="sk-mobile-menu"> 
+        <div class="sk-admin-prfl2">
+            <ul>
+                <li><span>A</span></li>
+                <li><p>Admin</p><a href="#">email@m2dx.com</a></li> 
+            </ul>
+            <div class="sk-admin-form">
+                <ul>
+                    <li><a class="sk-my-btn" href="#">My Account</a></li>
+                    <li><a style="color: #FF7475;" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sk-menu-area2">
+            <div class="container">
+                <div class="sk-menu">  
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a class="sk-active" href="#">Users</a></li>
+                        <li><a href="#">Configuration </a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--**************END MOBILE MENU AREA**************-->
+ 
+
+    <!-- JS Files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap5.min.js"></script>
+    <script src="assets/js/pie-chart.js"></script>
+    <script src="assets/js/jquery.ddslick.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+        $("#Add_user_form").submit(function(e){
+          e.preventDefault();
+        });
+    </script>
+  </body>
+</html>
